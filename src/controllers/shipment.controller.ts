@@ -73,6 +73,21 @@ export class FileController {
     };
   }
 
+  @get('/getShipmentDetails')
+  public async getShipmentDetails() {
+    return {
+      shipmentId: '123456',
+      status: 'ACCEPTED',
+      remarks: '',
+      grossWeight: 10,
+      weightUnit: 'KG',
+      packageQuantity: 2,
+      packageType: 'kutu',
+      measurements: '',
+      houseWaybillNumber: 'sds',
+    };
+  }
+
   @post('/uploadFile')
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   public async createBucket(@requestBody() file: any): Promise<void> {
