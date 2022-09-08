@@ -10,7 +10,7 @@ export class FileController {
         {
           shipmentId: '38479y2uırhwejkfnds',
           status: 'SHP0000003',
-          referenceNo: 'SHP000001',
+          referenceNo: '000001',
           creationDate: new Date(),
           exporterId: 'wad',
           exporterName: 'wad',
@@ -28,7 +28,7 @@ export class FileController {
         {
           shipmentId: '38479y2uırhwejkfns2e',
           status: 'SHP0000002',
-          referenceNo: '3ejhjhds',
+          referenceNo: '000002',
           creationDate: new Date(),
           exporterId: 'wad',
           exporterName: 'wad',
