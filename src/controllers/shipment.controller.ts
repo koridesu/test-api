@@ -72,19 +72,24 @@ export class FileController {
       },
     };
   }
+  // '/shipments?shipmentId=123456';
 
-  @get('/getShipmentDetails')
-  public async getShipmentDetails() {
+  @get('/shipments')
+  public async getShipmentDetails(
+    @param.query.string('shipmentId') shipmentId: string,
+  ) {
     return {
-      shipmentId: '123456',
-      status: 'ACCEPTED',
-      remarks: '',
-      grossWeight: 10,
-      weightUnit: 'KG',
-      packageQuantity: 2,
-      packageType: 'kutu',
-      measurements: '',
-      houseWaybillNumber: 'sds',
+      data: {
+        shipmentId: '123456',
+        status: 'ACCEPTED',
+        remarks: '',
+        grossWeight: 10,
+        weightUnit: 'KG',
+        packageQuantity: 2,
+        packageType: 'kutu',
+        measurements: '',
+        houseWaybillNumber: 'sds',
+      },
     };
   }
 
