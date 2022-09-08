@@ -28,7 +28,7 @@ export class FileController {
         {
           shipmentId: '38479y2uırhwejkfns2e',
           status: 'SHP0000002',
-          referenceNo: 'SHP000002',
+          referenceNo: '3ejhjhds',
           creationDate: new Date(),
           exporterId: 'wad',
           exporterName: 'wad',
@@ -79,16 +79,32 @@ export class FileController {
     @param.query.string('shipmentId') shipmentId: string,
   ) {
     return {
-      data: {
-        shipmentId: '123456',
-        status: 'ACCEPTED',
-        remarks: '',
-        grossWeight: 10,
-        weightUnit: 'KG',
-        packageQuantity: 2,
-        packageType: 'kutu',
-        measurements: '',
-        houseWaybillNumber: 'sds',
+      info: {
+        shipmentId: '38479y2uırhwejkfns2e',
+        documentId: 'SHP0000002',
+        infoId: '',
+        infoType: 'Shipment',
+        creationDate: new Date(),
+        data: {
+          certificateNumber: '',
+          certificateDate: '',
+          insuredAmount: '',
+          currencyCode: '',
+          insuranceType: '',
+          paymentStatus: '',
+          paymentDate: '',
+          laneType: '',
+          creationDate: '',
+          expirationDate: '',
+          declarationType: '',
+          category: '',
+          requestType: '',
+          amount: '',
+          accountNumber: '',
+          status: '',
+          remarks: '',
+          lrnNumber: '',
+        },
       },
     };
   }
